@@ -1,1 +1,1 @@
-belajarJs
+belajar javascript
