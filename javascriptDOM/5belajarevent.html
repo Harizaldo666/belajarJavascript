@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .login {
+        background: cornflowerblue;
+      }
+      .login2 {
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body onload="alert('sudah selesai')">
+    <input class="login2" type="text" name="" id="input" value="nama" />
+
+    <script>
+      var input1 = document.getElementById("input");
+
+      //---------- event ---------
+
+      //onclik di tag body
+      //   function berubah() {
+      //     input1.style.backgroundColor = "blue";
+      //   }
+
+      //onclick di tag script
+      //   input1.onclick = function () {
+      //     berubah();
+      //   };
+      function berubah() {
+        input1.style.backgroundColor = "gray";
+      }
+
+      //cara umum
+      input1.addEventListener("click", function () {
+        berubah();
+      });
+
+      input1.addEventListener("mouseenter", function () {
+        input1.style.backgroundColor = "blue";
+      });
+
+      input1.addEventListener("mouseleave", function () {
+        input1.style.backgroundColor = "red";
+      });
+    </script>
+  </body>
+</html>

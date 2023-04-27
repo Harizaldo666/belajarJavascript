@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>metodeAngka</title>
+  </head>
+  <body>
+    <div id="text"></div>
+
+    <script>
+      var angka = 1000;
+      var angka2 = 123.123123123;
+
+      //------metode number-------
+      //round() ceil() floor() Object Methods(contoh: abs, log)
+      //random spesific formula -> Math.floor(Math.random()=x) * 1;
+      //   var angka_baru = Math.floor(241.001);
+      var x = 1000; //range /jarak
+      var y = 10; //batas minimal
+      //batas max = y * x;
+      var angka_baru = Math.floor(Math.random() * x) * y;
+
+      document.getElementById("text").innerHTML = angka_baru;
+    </script>
+  </body>
+</html>

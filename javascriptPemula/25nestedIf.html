@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nestedIf</title>
+  </head>
+  <body>
+    <div id="text"></div>
+    <script>
+      var programer = 250000;
+      var designer = 30000;
+      var barang = 25000;
+
+      if (programer > barang) {
+        if (programer > barang * 2) {
+          alert("programer bisa beli 2 barang");
+        } else {
+          alert("programer hanya bisa beli 1 barang");
+        }
+      } else {
+        alert("uang programer kurang");
+      }
+    </script>
+  </body>
+</html>

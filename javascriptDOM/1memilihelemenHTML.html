@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memilih Element HTML</title>
+  </head>
+  <body>
+    <div id="box1"></div>
+
+    <div class="boxes"></div>
+    <div class="boxes"></div>
+    <div class="boxes"></div>
+
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Javascript</li>
+    </ul>
+
+    <script>
+      //mengambil id
+      document.getElementById("box1").innerHTML = "Harizaldo";
+
+      //mengambil class
+      //   document.getElementsByClassName("boxes")[0].innerHTML = "Alfaraze";
+      //   document.getElementsByClassName("boxes")[1].innerHTML = "Rangkuti";
+      //   document.getElementsByClassName("boxes")[2].innerHTML = "Pixxiee";
+      var boxes = document.getElementsByClassName("boxes");
+      boxes[0].innerHTML = "Alfaraze";
+      boxes[1].innerHTML = "Rangkuti";
+      boxes[2].innerHTML = "Pixxiee";
+
+      //mengambil tag
+      var list = document.getElementsByTagName("li");
+      list[0].innerHTML = "PHP";
+      list[1].innerHTML = "SCSS";
+      list[2].innerHTML = "JQuery";
+    </script>
+  </body>
+</html>

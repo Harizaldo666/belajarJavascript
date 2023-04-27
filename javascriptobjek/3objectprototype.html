@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="box"></div>
+    <div id="box1"></div>
+
+    <script>
+      function pemain_bola(namax, umur) {
+        this.nama = namax;
+        this.umur = umur;
+      }
+
+      pemain_bola.prototype.negara = "Portugal";
+
+      var cr = new pemain_bola("ronaldo", 43);
+      var messi = new pemain_bola("lionel messi", 40);
+
+      document.getElementById("box").innerHTML = cr.nama + " " + cr.negara;
+      document.getElementById("box1").innerHTML = messi.nama + " " + messi.umur;
+    </script>
+  </body>
+</html>

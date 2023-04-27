@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>elseIf</title>
+  </head>
+  <body>
+    <div id="text"></div>
+    <script>
+      //if dan else
+      //operator logika == != > >= < <=
+      //dan && ..... atau ||
+
+      var programer = 2500;
+      var designer = 30000;
+      var barang = 25000;
+
+      /*
+         if(syarat){
+           kalau terpenuhi
+         }else{
+           kalau tidak terpenuhi
+         }
+      */
+      if (programer == barang) {
+        alert("uang programer tidak cukup, belanja batal");
+      } else if (designer == barang) {
+        alert("uang designer cukup, belanja berhasil");
+      } else if (designer >= barang) {
+        alert("uang designer kebanyakan, belanja berhasil");
+      } else {
+        alert("uang tida ada yang cukup");
+      }
+    </script>
+  </body>
+</html>

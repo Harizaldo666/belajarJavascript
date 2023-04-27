@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="box"></div>
+    <script>
+      //membuat object
+      var programmer = {
+        nama: "Udin",
+        umur: 10,
+        hobi: "Coding",
+        getData: function () {
+          return "nama: " + this.nama + " umur: " + this["umur"];
+        },
+        //mengubah nilai object
+        setData: function (nama1) {
+          this.nama = nama1;
+        },
+      };
+      programmer.setData("Pixxiee");
+      document.getElementById("box").innerHTML = programmer.getData();
+    </script>
+  </body>
+</html>

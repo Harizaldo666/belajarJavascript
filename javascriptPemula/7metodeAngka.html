@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>metodeAngka</title>
+  </head>
+  <body>
+    <div id="text"></div>
+
+    <script>
+      var angka = 1000;
+      var angka2 = 123.123123123;
+
+      //   var angka_baru = angka2.toFixed(4);
+      //   var angka_baru = angka.toString() + angka2;
+      //   var angka_baru = Math.random();
+      //   var angka_baru = Math.random().toFixed(3) + angka;
+      //   var angka_baru = Math.min(1, angka, angka2);
+      var angka_baru = Math.max(1, angka, angka2);
+
+      //------metode number-------
+      //toFixed(n) toString() random() min(a, b, c) max(a, b, c)
+      document.getElementById("text").innerHTML = angka_baru;
+    </script>
+  </body>
+</html>

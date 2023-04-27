@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Nama :<span id="nama"></span></p>
+    <p>Umur :<span id="umur"></span></p>
+    <p>Hobi :<span id="hobi"></span></p>
+
+    <script>
+      //membuat object
+      var programmer = {
+        nama: "Udin",
+        umur: 10,
+        hobi: "Coding",
+      };
+      document.getElementById("nama").innerHTML = programmer.nama;
+
+      //cara ke dua
+      var designer = new Object();
+      designer.nama = "Pixxiee";
+      designer.umur = 15;
+      designer.hobi = "designer";
+
+      document.getElementById("umur").innerHTML = designer["umur"];
+    </script>
+  </body>
+</html>

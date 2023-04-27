@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>scopeVariable</title>
+  </head>
+  <body>
+    <div id="text"></div>
+    <script>
+      //global var & local var
+
+      //global scope
+      var text = "Hallo";
+
+      function printText() {
+        //local scope
+        var text2 = "Harizaldo";
+
+        // document.getElementById("text").innerHTML = text; //2
+        // document.getElementById("text").innerHTML = text2; //3
+
+        //global var
+        text3 = "Alfaraze";
+
+        /*var*/ text = "Hai";
+      }
+      //   document.getElementById("text").innerHTML = text; //1
+      printText();
+      //   document.getElementById("text").innerHTML = text2; //4
+      //   document.getElementById("text").innerHTML = text3; //5
+      document.getElementById("text").innerHTML = /*var*/ text; //kalau pakai var global kalau tidak pakai local
+    </script>
+  </body>
+</html>

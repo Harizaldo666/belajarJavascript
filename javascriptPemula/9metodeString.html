@@ -1,0 +1,28 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>metodeString</title>
+  </head>
+  <body>
+    <div id="text"></div>
+
+    <script>
+      //-------metode string--------
+      //length indexOf(s) lastIndexOf(s) search charAt(i)
+      //toUpperCase() toLowerCase() replace("s","s")
+      //substring(start, end), substr(start, length)
+      var nama = "Harizaldo Alfaraze";
+      //   var hasil = nama.length;
+      //   var hasil = nama.indexOf("z");
+      //   var hasil = nama.lastIndexOf("z");
+      //   var hasil = nama.charAt("1");
+      //   var hasil = nama.toLocaleUpperCase();
+      //   var hasil = nama.toLowerCase();
+      var hasil = nama.replace("Alfaraze", "xxx");
+
+      document.getElementById("text").innerHTML = hasil;
+    </script>
+  </body>
+</html>

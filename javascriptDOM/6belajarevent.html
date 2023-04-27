@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .login {
+        background: cornflowerblue;
+      }
+      .login2 {
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+  <body onload="">
+    <input class="login2" type="text" name="" id="input" value="nama" />
+    <input type="submit" value="submit" id="submit" />
+    <p>nama nya adalah:<span id="p1"></span></p>
+
+    <script>
+      var input1 = document.getElementById("input");
+
+      //---------- event ---------
+
+      //onclik di tag body
+      //   function berubah() {
+      //     input1.style.backgroundColor = "blue";
+      //   }
+
+      //onclick di tag script
+      function berubah() {
+        input1.style.backgroundColor = "gray";
+      }
+      //   input1.onclick = function () {
+      //     berubah();
+      //   };
+      //cara simple
+      //   input1.onclick = berubah;
+
+      //cara umum
+      //   input1.addEventListener("click", function () {
+      //     berubah();
+      //   });
+      //cara siple
+      input1.addEventListener("click", berubah);
+
+      input1.addEventListener("mouseenter", function () {
+        input1.style.backgroundColor = "blue";
+      });
+
+      input1.addEventListener("mouseleave", function () {
+        input1.style.backgroundColor = "red";
+      });
+
+      //mengambil isi input submit
+      var submit = document.getElementById("submit");
+      var span = document.getElementById("p1");
+
+      submit.onclick = function () {
+        var text = input1.value;
+        span.innerHTML = text;
+      };
+    </script>
+  </body>
+</html>
