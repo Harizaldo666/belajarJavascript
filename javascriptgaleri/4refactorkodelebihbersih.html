@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img src="gambar/gambar1.png" width="400" id="gambar" /><br />
+    <br />
+    <div id="caption">kalilinux</div>
+    <br />
+
+    <a href="#" onclick="sebelum()">Sebelum</a>
+
+    <a href="#" onclick="ganti('1')">1</a>
+    <a href="#" onclick="ganti('2')">2</a>
+    <a href="#" onclick="ganti('3')">3</a>
+
+    <a href="#" onclick="sesudah()">Sesudah</a>
+
+    <script>
+      var nomor = 1;
+      var caption = document.getElementById("caption");
+      var text = ["", "kalilinux", "vscode", "github"];
+
+      function ganti(angka) {
+        nomor = angka;
+        ganti_gambar(angka);
+      }
+      function sebelum() {
+        nomor--;
+        if (nomor < 1) nomor = 3;
+        ganti_gambar(nomor);
+      }
+      function sesudah() {
+        nomor++;
+        if (nomor > 3) nomor = 1;
+        ganti_gambar(nomor);
+      }
+
+      //refactor fungsi mengganti gambar
+      function ganti_gambar(angka) {
+        var lokasi = "gambar/gambar" + nomor + ".png";
+        document.getElementById("gambar").src = lokasi;
+        caption.innerHTML = text[nomor];
+        return false;
+      }
+    </script>
+  </body>
+</html>

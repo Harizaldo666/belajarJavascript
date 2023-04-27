@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <img src="gambar/gambar1.png" width="400" id="gambar" /><br />
+    <br />
+    <div id="caption">kalilinux</div>
+    <br />
+
+    <a href="#" onclick="sebelum()">Sebelum</a>
+
+    <a href="#" onclick="ganti('1')">1</a>
+    <a href="#" onclick="ganti('2')">2</a>
+    <a href="#" onclick="ganti('3')">3</a>
+
+    <a href="#" onclick="sesudah()">Sesudah</a>
+
+    <script>
+      var nomor = 1;
+      var caption = document.getElementById("caption");
+      var text = ["", "kalilinux", "vscode", "github"];
+
+      function ganti(angka) {
+        nomor = angka;
+        // if (angka == 1) angka = "gambar/gambar1.png";
+        var lokasi = "gambar/gambar" + angka + ".png";
+        document.getElementById("gambar").src = lokasi;
+        caption.innerHTML = text[angka];
+        //untuk menghilangkan sifat tag href
+        return false;
+      }
+
+      function sebelum() {
+        nomor = nomor - 1;
+        if (nomor < 1) {
+          nomor = 3;
+        }
+        // if (angka == 1) angka = "gambar/gambar1.png";
+        var lokasi = "gambar/gambar" + nomor + ".png";
+        document.getElementById("gambar").src = lokasi;
+        caption.innerHTML = text[nomor];
+        //untuk menghilangkan sifat tag href
+        return false;
+      }
+      function sesudah() {
+        nomor = nomor + 1;
+        if (nomor > 3) {
+          nomor = 1;
+        }
+        // if (angka == 1) angka = "gambar/gambar1.png";
+        var lokasi = "gambar/gambar" + nomor + ".png";
+        document.getElementById("gambar").src = lokasi;
+        caption.innerHTML = text[nomor];
+        //untuk menghilangkan sifat tag href
+        return false;
+      }
+    </script>
+  </body>
+</html>
